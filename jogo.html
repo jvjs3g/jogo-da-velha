@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da velha</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		.espaco{
+			border:1px solid black;
+			display: block;
+			float: left;
+			height: 80px;
+			width: 80px;
+			text-align: center;
+			line-height: 100px;
+		}
+		div#jogo{
+			width:246px;
+			display: block;
+			margin:150px auto;
+		}
+		div#vez{
+			display: block;
+			position: absolute;
+			left: 550px;
+			margin:-80px auto;
+			font-weight:bold; 
+		}
+
+		body{
+			background-color: rgba(0,0,0,0.1);
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="vez">
+		<p style="float:left;margin-right: 10px;">vez do jogador</p>
+		<img src="" border="0" height="50"/>
+	</div>
+	<div id="jogo">
+		<div id="a1" class="espaco" jogada=""></div>
+		<div id="a2" class="espaco" jogada=""></div>
+		<div id="a3" class="espaco" jogada=""></div>
+
+		<div id="b1" class="espaco" jogada=""></div>
+		<div id="b2" class="espaco" jogada=""></div>
+		<div id="b3" class="espaco" jogada=""></div>
+
+		<div id="c1" class="espaco" jogada=""></div>
+		<div id="c2" class="espaco" jogada=""></div>
+		<div id="c3" class="espaco" jogada=""></div>
+	</div>
+	<script src="jogo.js"></script>
+</body>
+</html>
